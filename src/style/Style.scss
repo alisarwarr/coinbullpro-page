@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;    
+    color: #587087;
+    font-family: "DM Sans", sans-serif;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+
+    overflow-x: hidden;
+}
+
+.dialog {
+    .btns {
+        margin-top: 1rem;
+
+
+        display: flex;
+
+
+        &_flexy {
+            flex: 0.925;
+        }
+
+
+        &_cancelBtn {
+            width: 4.725rem;
+            height: 2.625rem;
+            line-height: 2.8125rem;
+            border-radius: 16px !important;
+            padding: 1.875rem;
+            text-transform: capitalize;
+    
+            margin-right: 0.385rem;
+            color: rgb(41, 98, 255) !important;
+            font-size: 0.915rem;
+            font-weight: bold;
+        }
+
+
+        &_addBtn {
+            width: 4.725rem;
+            height: 2.625rem;
+            line-height: 2.8125rem;
+            border-radius: 16px !important;
+            padding: 1.875rem;
+            text-transform: capitalize;
+    
+    
+            background-color: rgb(41, 98, 255) !important;
+            color: rgb(255, 255, 255) !important;
+            font-size: 0.915rem;
+            font-weight: bold;
+    
+    
+            &:hover {
+                background-color: rgb(28, 68, 178) !important;
+            }
+        }
+    }
+}
